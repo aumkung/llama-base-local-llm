@@ -6,7 +6,6 @@ llama-cpp-server และ Qwen3.5 4B โมเดลสำหรับรัน
 
 - รองรับ GPU ของ NVIDIA ผ่าน CUDA 12.4
 - โมเดล Qwen3.5 4B (4-bit quantized)
-- รองรับภาษาไทย (หน้า login)
 - ใช้ Docker รันบน GPU
 
 ## ดาวน์โหลดโมเดล
