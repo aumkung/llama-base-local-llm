@@ -12,8 +12,6 @@ A local LLM inference server running Qwen3.5 4B on NVIDIA GPU using llama-cpp-se
 ## Project Structure
 
 ```
-
-├── login.html          # Login page (Thai language)
 ├── Dockerfile          # Build configuration for llama-server
 ├── docker-compose.yml  # Docker orchestration
 ├── models/             # Model files directory
