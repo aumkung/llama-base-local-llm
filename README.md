@@ -32,6 +32,7 @@ https://huggingface.co/unsloth/Qwen3.5-4B-GGUF
 
 - Docker Desktop (มี NVIDIA Container Toolkit)
 - การ์ดจอ NVIDIA 6GB+
+- ถ้าใช้ windows สร้าง .wslconfig: ตั้งให้ใช้ ram24gb และทำ swap 8gb
 
 ### ขั้นตอน
 
