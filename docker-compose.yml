@@ -1,0 +1,35 @@
+services:
+  qwen-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: qwen3-server
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    cap_add:
+      - IPC_LOCK
+    ulimits:
+      memlock: -1 # ปลดล็อก ข้อจำกัดหน่วยความจำ สำหรับ --mlock
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./models:/models
+    command: >
+      --model /models/Qwen3.5-4B-Q4_K_M.gguf
+      --alias qwen3.5-4b
+      --n-cpu-moe 35
+      --no-mmap
+      --mlock
+      --cache-type-k turbo4
+      --cache-type-v turbo3
+      --n-gpu-layers 100
+      --host 0.0.0.0
+      --port 8080
+      --metrics
+    restart: unless-stopped
