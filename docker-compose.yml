@@ -1,9 +1,9 @@
 services:
-  qwen-server:
+  llm-server:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: qwen3-server
+    container_name: llm-server
     runtime: nvidia
     deploy:
       resources:
