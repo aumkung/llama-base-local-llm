@@ -2,27 +2,27 @@
 
 llama-cpp-server และ Qwen3.5 4B โมเดลสำหรับรันบน GPU ของ NVIDIA
 
-## สิ่งที่โปรแกรมมี
+## Stack
 
 - รองรับ GPU ของ NVIDIA ผ่าน CUDA 12.4
 - โมเดล Qwen3.5 4B (4-bit quantized)
 - ใช้ Docker รันบน GPU
 
-## ดาวน์โหลดโมเดล
+## Models Download
 
 ดาวน์โหลดโมเดลจาก Hugging Face:
 ```
 https://huggingface.co/unsloth/Qwen3.5-4B-GGUF
 ```
 
-ดาวน์โหลดไฟล์ `.gguf` มาแล้ว放在了 `models/` โฟลเดอร์
+ดาวน์โหลดไฟล์ `.gguf` มาแล้วนำไปไว้ที่ `models/` โฟลเดอร์
 
 ## ติดตั้งและรัน
 
-### ที่ต้องเตรียม
+### Requirement
 
 - Docker Desktop (มี NVIDIA Container Toolkit)
-- การ์ดจอ NVIDIA
+- การ์ดจอ NVIDIA 6GB+
 
 ### ขั้นตอน
 
@@ -48,19 +48,6 @@ docker compose down
 - `--model`: path ของโมเดล
 - `--n-gpu-layers`: จำนวน layer ที่ใช้ GPU (เพิ่ม = เร็วขึ้น)
 - `--port`: พอร์ตที่เข้าถึง
-
-## troubleshoot
-
-### Out of Memory
-
-ลด `--n-gpu-layers` ใน docker-compose.yml
-
-### GPU ไม่พบ
-
-```bash
-nvidia-smi
-docker run --rm --gpus all nvidia/cuda:12.4.1-runtime ubuntu nvidia-smi
-```
 
 ## โครงสร้างไฟล์
 
