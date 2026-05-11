@@ -1,4 +1,4 @@
-# LLM Chat Server for cheapest gpu Nvidia
+# llama.cpp LLM Chat Server for cheapest gpu Nvidia
 
 llama-cpp-server และ Qwen3.5 4B โมเดลสำหรับรันบน GPU ของ NVIDIA
 
