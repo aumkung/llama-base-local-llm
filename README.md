@@ -8,7 +8,7 @@ llama-cpp-server และ Qwen3.5 4B โมเดลสำหรับรัน
 
 <div align="center">
   <img src="./images/performance.png" alt="Llama Base Local LLM" width="500">
-  <h1>Speed up to 60T/S</h1>
+  <h1>speed avg 63 Tokens/sec </h1>
 </div>
 
 ## Stack
