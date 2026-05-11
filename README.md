@@ -3,13 +3,12 @@
 llama-cpp-server และ Qwen3.5 4B โมเดลสำหรับรันบน GPU ของ NVIDIA
 
 <div align="center">
-  <img src="./images/performance.png" alt="Llama Base Local LLM" width="500">
-  <h1>ความเร็วระดับ 60t/second</h1>
+  <img src="./images/preview.gif" alt="Llama Base Local LLM" width="1000">
 </div>
 
 <div align="center">
   <img src="./images/performance.png" alt="Llama Base Local LLM" width="500">
-  <h1>ความเร็วระดับ 60t/second</h1>
+  <h1>Speed up to 60T/S</h1>
 </div>
 
 ## Stack
