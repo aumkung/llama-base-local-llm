@@ -1,6 +1,16 @@
-# LLM Chat Server
+# LLM Chat Server for cheapest gpu Nvidia
 
 llama-cpp-server และ Qwen3.5 4B โมเดลสำหรับรันบน GPU ของ NVIDIA
+
+<div align="center">
+  <img src="./images/performance.png" alt="Llama Base Local LLM" width="500">
+  <h1>ความเร็วระดับ 60t/second</h1>
+</div>
+
+<div align="center">
+  <img src="./images/performance.png" alt="Llama Base Local LLM" width="500">
+  <h1>ความเร็วระดับ 60t/second</h1>
+</div>
 
 ## Stack
 
